@@ -238,16 +238,16 @@ a {
   background: #188ce8;
 }
 
-.list-benefits {
+.benefit {
   display: flex;
   gap: 30px;
 }
 
-.benefit {
+.benefit__item {
   width: calc(100% / 4);
 }
 
-.benefit-icon-background {
+.benefit__icon-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,7 +258,7 @@ a {
   margin-bottom: 30px;
 }
 
-.benefit-icon {
+.benefit__icon {
   display: block;
   width: 70px;
   height: 70px;
@@ -278,13 +278,13 @@ a {
   overflow: hidden;
 }
 
-.header-benefits {
+.benefit__header {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.paragraph-benefits {
+.benefit__paragraph {
   color: var(--secondary-text-color);
   margin-top: 10px;
 }
