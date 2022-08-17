@@ -632,13 +632,13 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
-.list-buttons {
+.example__list-btn {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.button {
+.example__button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -654,23 +654,26 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: block;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
-.button:hover,
-.button:focus {
+.example__button:hover,
+.example__button:focus {
   color: var(--white-text-color);
   background-color: var(--blue-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button-accent {
+.example__button--accent {
   color: var(--white-text-color);
   background-color: var(--blue-color);
 }
 
 .button-port {
-  display: block;
-  padding: 6px 22px;
-  border-radius: 4px;
 }
 
 .button-port:hover,
@@ -679,38 +682,42 @@ a {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.list-examples {
+.example__list {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.project-card {
+.example__item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-card:hover {
+.example__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-link {
+.example__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:focus {
+.example__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-thumb {
+.example__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.project-overlay {
+.example__img {
+  display: block;
+}
+
+.example__overlay {
   position: absolute;
   display: flex;
   top: 0;
@@ -727,15 +734,15 @@ a {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.project-card:hover .project-overlay {
+.example__item:hover .example__overlay {
   transform: translateY(0);
 }
 
-.project-link:focus .project-overlay {
+.example__link:focus .example__overlay {
   transform: translateY(0);
 }
 
-.project-text {
+.example__paragraph {
   font-family: 'Roboto';
   font-size: 18px;
   line-height: 1.56;
@@ -743,21 +750,21 @@ a {
   color: var(--white-text-color);
 }
 
-.project-name {
+.example__name {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
 
-.project-app {
+.example__app {
   margin-top: 4px;
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-text-color);
 }
 
-.about123 {
+.example__key {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -784,7 +791,7 @@ a {
   visibility: hidden;
 }
 
-.backdrope.is-hidden .modal {
+.backdrope.hidden .modal {
   transform: translate(-50%, -50%) scale(1.2);
 }
 
