@@ -192,7 +192,7 @@ a {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   color: var(--white-text-color);
 
   font-weight: 900;
@@ -207,7 +207,7 @@ a {
   width: 696px;
 }
 
-.hero-button {
+.hero__button {
   display: block;
   font-weight: 700;
   font-size: 16px;
@@ -233,8 +233,8 @@ a {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background: #188ce8;
 }
 
