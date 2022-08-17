@@ -289,25 +289,21 @@ a {
   margin-top: 10px;
 }
 
-.section-about {
-  padding-top: 0;
-}
-
-.img-do {
+.about__img {
   display: block;
 }
 
-.list-do {
+.about__list {
   margin-top: 50px;
   display: flex;
   gap: 30px;
 }
 
-.work-item {
+.about__item {
   position: relative;
 }
 
-.work-thumb {
+.about__thumb {
   position: absolute;
   display: flex;
   width: 100%;
@@ -319,7 +315,7 @@ a {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.work-header {
+.about__header {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -340,7 +336,7 @@ a {
   margin-top: 50px;
 }
 
-.section-title {
+.about__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -752,7 +748,7 @@ a {
   color: var(--secondary-text-color);
 }
 
-.about {
+.about123 {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
