@@ -144,7 +144,7 @@ a {
 }
 
 .nav__link,
-.contact {
+.header-contact__link {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -164,19 +164,19 @@ a {
   color: var(--blue-color);
 }
 
-.contact {
+.header-contact__link {
   color: var(--secondary-text-color);
 }
 
-.contact:hover .contacts-icon-envelope,
-.contact:focus .contacts-icon-envelope,
-.contact:hover .contacts-icon-smartphone,
-.contact:focus .contacts-icon-smartphone {
+.header-contact__link:hover .contacts-icon-envelope,
+.header-contact__link:focus .contacts-icon-envelope,
+.header-contact__link:hover .contacts-icon-smartphone,
+.header-contact__link:focus .contacts-icon-smartphone {
   fill: var(--blue-color);
 }
 
-.contact:hover,
-.contact:focus {
+.header-contact__link:hover,
+.header-contact__link:focus {
   color: var(--blue-color);
 }
 
