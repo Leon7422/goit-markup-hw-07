@@ -66,7 +66,9 @@
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
 
-          <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
+          <button type="button" class="hero__button button-submit" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -432,7 +434,7 @@
 
           <form class="subscribe__form">
             <input class="subscribe__input" type="email" name="email" placeholder="E-mail" />
-            <button class="subscribe__button" type="submit">
+            <button class="button-submit" type="submit">
               <span>Підписатися </span>
               <svg class="subscribe__icon">
                 <use href="./images/icons.svg#icon-icon-send"></use>
@@ -449,40 +451,40 @@
         <button class="modal__close" type="button" data-modal-close>
           <svg class="modal__icon"><use href="./images/icons.svg#icon-close-button"></use></svg>
         </button>
-        <form>
-          <div class="form-thumb" role="group" arial-labelby="contact-details-modal">
-            <p class="text-modal" id="contact-details-modal">
+        <form class="form">
+          <div class="form__group" role="group" arial-labelby="contact-details-modal">
+            <p class="form__text" id="contact-details-modal">
               Залиште свої дані, ми вам передзвонимо
             </p>
-            <label class="modal-data username">
-              <span class="modal-input-description">Ім'я</span>
-              <div class="input-thumb">
-                <input class="modal-input" type="text" name="username" />
-                <svg class="icon-modal">
+            <label class="form__data">
+              <span class="form__description">Ім'я</span>
+              <div class="form__thumb">
+                <input class="form__input" type="text" name="username" />
+                <svg class="form__icon">
                   <use href="./images/icons.svg#icon-person-modal"></use>
                 </svg>
               </div>
             </label>
-            <label class="modal-data">
-              <span class="modal-input-description">Телефон</span>
-              <div class="input-thumb">
-                <input class="modal-input" type="tel" name="phone-number" />
-                <svg class="icon-modal">
+            <label class="form__data">
+              <span class="form__description">Телефон</span>
+              <div class="form__thumb">
+                <input class="form__input" type="tel" name="phone-number" />
+                <svg class="form__icon">
                   <use href="./images/icons.svg#icon-phone-modal"></use>
                 </svg>
               </div>
             </label>
-            <label class="modal-data">
-              <span class="modal-input-description">Пошта</span>
-              <div class="input-thumb">
-                <input class="modal-input" type="email" name="email" />
-                <svg class="icon-modal">
+            <label class="form__data">
+              <span class="form__description">Пошта</span>
+              <div class="form__thumb">
+                <input class="form__input" type="email" name="email" />
+                <svg class="form__icon">
                   <use href="./images/icons.svg#icon-email-modal"></use>
                 </svg>
               </div>
             </label>
-            <label class="modal-data">
-              <span class="modal-input-description comment">Коментар</span>
+            <label class="form__data">
+              <span class="form__description">Коментар</span>
               <textarea
                 class="textarea"
                 name="textarea"
@@ -490,21 +492,21 @@
                 placeholder="Введіть текст"
               ></textarea>
             </label>
-            <label class="modal-data custom-checkbox">
-              <div class="custom-checkbox-thumb">
-                <input class="agreement" type="checkbox" name="agree" />
-                <svg class="icon-vector">
+            <label class="form__data checkbox">
+              <div class="checkbox__thumb">
+                <input class="checkbox__input" type="checkbox" name="agree" />
+                <svg class="checkbox__vector">
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
-                <svg class="icon-check">
+                <svg class="checkbox-check">
                   <use href="./images/icons.svg#icon-icon-check"></use>
                 </svg>
               </div>
-              <span class="modal-input-description">
+              <span class="form__description">
                 Погоджуюся з розсилкою та приймаю <a class="сontract" href="">Умови договору</a>
               </span>
             </label>
-            <button class="submit-button submit-button-modal" type="submit">Відправити</button>
+            <button class="button-submit form__button" type="submit">Відправити</button>
           </div>
         </form>
       </div>
